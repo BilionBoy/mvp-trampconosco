@@ -18887,3 +18887,93 @@ Processing by LandingController#index as HTML
 Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
 
 
+Started GET "/landing/index" for ::1 at 2025-02-15 12:50:20 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.6ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.4ms | GC: 0.1ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:50:29 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:50:50 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.1ms | GC: 0.1ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:51:02 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:51:21 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:51:42 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:52:02 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.1ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:52:26 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:52:33 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:52:38 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.2ms | GC: 0.5ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.5ms)
+
+
