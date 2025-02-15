@@ -170,6 +170,201 @@
     white-space: nowrap;
   }
 
+  .stats-section {
+  padding: 80px 0;
+  background-color: white;
+  }
+
+  .section-header {
+  text-align: center;
+  margin-bottom: 48px;
+  }
+
+  .section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+  }
+
+  .section-subtitle {
+  font-size: 16px;
+  color: var(--gray-600);
+  }
+
+  /* Carousel Styles */
+  .services-carousel {
+  position: relative;
+  margin: 0 -24px;
+  padding: 0 40px;
+  margin-bottom: 64px;
+  }
+
+  .carousel-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 8px 0;
+  }
+
+  .carousel-container::-webkit-scrollbar {
+  display: none;
+  }
+
+  .carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid var(--gray-200);
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  }
+
+  .carousel-arrow.prev {
+  left: 0;
+  }
+
+  .carousel-arrow.next {
+  right: 0;
+  }
+
+  .service-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .service-category {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-size: 14px;
+  margin-bottom: 12px;
+  }
+
+  .service-category i {
+  font-size: 16px;
+  }
+
+  .service-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: 8px;
+  }
+
+  .evaluation-text {
+  font-size: 14px;
+  color: var(--gray-600);
+  margin-bottom: 8px;
+  }
+
+  .rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  }
+
+  .rating-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  }
+
+  .stars {
+  color: #FFD700;
+  letter-spacing: 2px;
+  }
+
+  .service-date {
+  display: block;
+  font-size: 14px;
+  color: var(--gray-500);
+  }
+
+  /* Stats Styles */
+  .stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+  }
+
+  .stat-item {
+  text-align: center;
+  }
+
+  .stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  }
+
+  .stat-number::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #FFE4E8;
+  z-index: -1;
+  }
+
+  .stat-description {
+  font-size: 16px;
+  color: var(--gray-600);
+  max-width: 300px;
+  margin: 0 auto;
+  }
+
+  @media (max-width: 991.98px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-card {
+    width: 280px;
+  }
+  }
+
+  @media (max-width: 767.98px) {
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .service-card {
+    width: 260px;
+  }
+
+  .stat-number {
+    font-size: 28px;
+  }
+
+  .stat-description {
+    font-size: 14px;
+  }
+  }
   /* Hero Section */
   .hero-section {
     padding: 64px 0;
@@ -547,17 +742,88 @@
         <p class="lead">Tenha acesso a milhares de profissionais na palma da sua mão</p>
         <div class="app-buttons">
           <a href="#" class="app-button">
-            <img src="/placeholder.svg?height=60&width=200" alt="Google Play">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRD0JCUit5C-mMNlW-sIpXjpdMbRd2cZ0zRRWbr9BuR3YM9RPCQrojk6DG2P15XN-FdPLpQF973xI1Tg1mmyM4PO2y5GLaePMaS2E0DnuE4ajQ8TmQfYMZRuUjtjFR11j445Wb1BNK4W0/s0/image1.png" alt="Google Play">
           </a>
           <a href="#" class="app-button">
-            <img src="/placeholder.svg?height=60&width=200" alt="App Store">
+            <img src="https://images.macrumors.com/t/-B-mSOd3uXDF2j9gWg3qESddUhI=/1200x1200/smart/article-new/2022/01/iOS-App-Store-General-Feature-JoeBlue.jpg" alt="App Store">
           </a>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="app-preview">
-          <img src="https://blob.contato.io/machine-user-images/close-up-smiley-man-therapy-img-28812-20210716183331.jpg" alt="TrampConosco App" class="app-image">
+          <img src="https://scontent.fpvh4-1.fna.fbcdn.net/v/t39.30808-6/378840273_324575940055474_6246485447416630908_n.png?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=NKdvSIC6JRIQ7kNvgGYTXYJ&_nc_oc=Adi6rbLazPHUQs6jD9UkvFNKl9fDuLXrastSdJVgw4L7mzzSXPh64xfs_DistCrmXVSsfCrJw-4ujQx6jEQXbVGF&_nc_zt=23&_nc_ht=scontent.fpvh4-1.fna&_nc_gid=AN9g_snVBlVtIMgMDObvKfc&oh=00_AYALEoxiX5b1Gs-sYRTT_OY_yJYDAq2kkG6LhbPVLHgLew&oe=67B68F34" alt="TrampConosco App" class="app-image">
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Pedidos mais frequentes</h2>
+      <p class="section-subtitle">Mais de 10 mil pedidos realizados por dia</p>
+    </div>
+    <div class="services-carousel">
+      <button class="carousel-arrow prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="carousel-container">
+        <div class="service-card">
+          <span class="service-category">
+            <i class="fas fa-heart"></i>
+            Saúde
+          </span>
+          <h3>Psicólogo</h3>
+          <p class="evaluation-text">Avaliação do cliente</p>
+          <div class="rating">
+            <span class="rating-number">4.7</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <span class="service-date">28 de Fevereiro de 2021</span>
+        </div>
+        <div class="service-card">
+          <span class="service-category">
+            <i class="fas fa-graduation-cap"></i>
+            Aulas
+          </span>
+          <h3>Aula de Português</h3>
+          <p class="evaluation-text">Avaliação do cliente</p>
+          <div class="rating">
+            <span class="rating-number">4.8</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <span class="service-date">14 de janeiro de 2021</span>
+        </div>
+        <div class="service-card">
+          <span class="service-category">
+            <i class="fas fa-handshake"></i>
+            Consultoria
+          </span>
+          <h3>Consultoria Jurídica</h3>
+          <p class="evaluation-text">Avaliação do cliente</p>
+          <div class="rating">
+            <span class="rating-number">4.7</span>
+            <div class="stars">★★★★★</div>
+          </div>
+          <span class="service-date">14 de Junho de 2020</span>
+        </div>
+      </div>
+      <button class="carousel-arrow next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="stats-container">
+      <div class="stat-item">
+        <h3 class="stat-number">4.000.000</h3>
+        <p class="stat-description">De serviços solicitados por ano na plataforma do TrampConosco.</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="stat-number">165.000</h3>
+        <p class="stat-description">Clientes felizes por mês, com serviços contratados pelo TrampConosco.</p>
+      </div>
+      <div class="stat-item">
+        <h3 class="stat-number">R$ 1.000.000.000</h3>
+        <p class="stat-description">Valor em serviços realizados por ano, no bolso dos nossos profissionais.</p>
       </div>
     </div>
   </div>
