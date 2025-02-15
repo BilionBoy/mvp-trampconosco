@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
   # Definir o layout de acordo com o controller
   # before_action :set_layout_by_controller
 
+  before_action :set_layout_by_controller
+
+  private
+
+  def set_layout_by_controller
+    self.class.layout controller_name == "landing" ? "home_application" : "application"
+  end
   # private
   #
   # def set_layout_by_controller

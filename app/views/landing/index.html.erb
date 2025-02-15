@@ -1,0 +1,564 @@
+<style>
+  :root {
+    --primary: #ff4b6e;
+    --primary-dark: #e63e5c;
+    --secondary: #333333;
+    --accent: #ffd700;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+  }
+
+  /* Global Styles */
+  body {
+    padding-top: 76px; /* Height of fixed navbar */
+    font-family: "Inter", sans-serif;
+    color: var(--gray-900);
+    line-height: 1.6;
+    overflow: auto;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  .navbar-brand .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: var(--gray-700) !important;
+    padding: 0.5rem 1rem !important;
+  }
+
+  .nav-link:hover {
+    color: var(--primary) !important;
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+
+  .btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    padding: 0.625rem 1.5rem;
+    font-weight: 500;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0.5rem;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(0);
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .dropdown-menu {
+    background-color: var(--gray-100);
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown-item {
+    color: var(--gray-800);
+    padding: 0.5rem 1rem;
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+
+  /* Categories Section */
+  .categories-section {
+    padding: 16px 0;
+    background-color: white;
+    border-bottom: 1px solid var(--gray-200);
+    width: 100%;
+    margin-top: -1px; /* Fix gap between navbar and categories */
+  }
+
+  .categories-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 48px;
+    padding: 8px 0;
+    margin: 0 -24px;
+    padding: 0 24px;
+    width: calc(100% + 48px);
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scroll-behavior: smooth;
+  }
+
+  .categories-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--gray-800);
+    min-width: auto;
+    transition: color 0.3s ease;
+  }
+
+  .category-item:hover {
+    color: var(--primary);
+  }
+
+  .category-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-size: 20px;
+  }
+
+  .category-item span {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 64px 0;
+    background: white;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--gray-900);
+    max-width: 600px;
+    font-weight: 700;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+    max-width: 500px;
+  }
+
+  .search-container {
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .search-form .input-group {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .search-form .form-control {
+    height: 56px;
+    font-size: 16px;
+    border: 1px solid var(--gray-300);
+    padding: 0 20px;
+  }
+
+  .search-form .btn {
+    padding: 0 24px;
+    font-size: 16px;
+  }
+
+  .professional-card {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+
+  .professional-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+  }
+
+  .rating-card {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .rating-card h3 {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: var(--gray-900);
+  }
+
+  .rating-card p {
+    margin: 0;
+    color: var(--gray-600);
+    font-size: 14px;
+  }
+
+  .rating-card .since {
+    font-size: 12px;
+    color: var(--gray-500);
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .rating span {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .stars {
+    color: var(--accent);
+  }
+
+  /* App Download Section */
+  .app-download-section {
+    padding: 80px 0;
+    background-color: var(--primary);
+    color: white;
+    position: relative;
+    width: 100%;
+  }
+
+  .app-download-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+  }
+
+  .app-download-section .lead {
+    font-size: 20px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+  }
+
+  .app-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .app-button {
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .app-button:hover {
+    transform: translateY(-4px);
+  }
+
+  .app-button img {
+    height: 48px;
+    width: auto;
+  }
+
+  .app-preview {
+    position: relative;
+    text-align: right;
+    height: 100%;
+  }
+
+  .app-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 991.98px) {
+    .hero-title {
+      font-size: 40px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+    }
+
+    .app-buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .app-preview {
+      margin-top: 48px;
+      text-align: center;
+    }
+
+    .app-image {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .hero-title {
+      font-size: 32px;
+    }
+
+    .hero-subtitle {
+      font-size: 16px;
+    }
+
+    .categories-scroll {
+      gap: 32px;
+    }
+
+    .category-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
+    }
+
+    .category-item span {
+      font-size: 12px;
+    }
+
+    .professional-card {
+      margin-top: 40px;
+    }
+
+    .app-download-section h2 {
+      font-size: 32px;
+    }
+
+    .app-download-section .lead {
+      font-size: 16px;
+    }
+  }
+</style>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <svg class="logo" width="250" height="40" viewBox="0 0 180 40">
+        <path d="M20 20C20 13.3726 25.3726 8 32 8H48C54.6274 8 60 13.3726 60 20C60 26.6274 54.6274 32 48 32H32C25.3726 32 20 26.6274 20 20Z" fill="#FF4B6E"/>
+        <text x="70" y="25" fill="#333333" font-family="Inter" font-weight="700" font-size="18">TrampConosco</text>
+      </svg>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#como-funciona">Como Funciona</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+          <ul class="dropdown-menu" aria-labelledby="servicosDropdown">
+            <li><a class="dropdown-item" href="#servico1">Serviço 1</a></li>
+            <li><a class="dropdown-item" href="#servico2">Serviço 2</a></li>
+            <li><a class="dropdown-item" href="#servico3">Serviço 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#para-profissionais">Para Profissionais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#blog">Blog</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a class="btn btn-outline-primary" href="#login">Login</a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-primary" href="#cadastro">Cadastre-se</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Categories Section -->
+<section class="categories-section">
+  <div class="container">
+    <div class="categories-scroll">
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <span>Assistência técnica</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <span>Aulas</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-car"></i>
+        </div>
+        <span>Autos</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <span>Consultoria</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <span>Design e Tecnologia</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-glass-cheers"></i>
+        </div>
+        <span>Eventos</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-tshirt"></i>
+        </div>
+        <span>Moda e beleza</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-hammer"></i>
+        </div>
+        <span>Reformas e reparos</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <span>Saúde</span>
+      </a>
+      <a href="#" class="category-item">
+        <div class="category-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <span>Serviços Domésticos</span>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="hero-title">Mais de 500 tipos de serviços em um só lugar</h1>
+        <p class="hero-subtitle">Encontre profissionais e contrate serviços para tudo o que precisar</p>
+        <div class="search-container">
+          <form class="search-form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Qual serviço você precisa?">
+              <button class="btn btn-primary" type="submit">
+                <i class="fas fa-search"></i>
+                Buscar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="professional-card">
+          <img src="/placeholder.svg?height=600&width=400" alt="Profissional TrampConosco" class="professional-image">
+          <div class="rating-card">
+            <h3>João Silva</h3>
+            <p>Profissional TrampConosco</p>
+            <p class="since">desde 2021</p>
+            <div class="rating">
+              <span>4.8</span>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- App Download Section -->
+<section class="app-download-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2>Faça o download do nosso aplicativo</h2>
+        <p class="lead">Tenha acesso a milhares de profissionais na palma da sua mão</p>
+        <div class="app-buttons">
+          <a href="#" class="app-button">
+            <img src="/placeholder.svg?height=60&width=200" alt="Google Play">
+          </a>
+          <a href="#" class="app-button">
+            <img src="/placeholder.svg?height=60&width=200" alt="App Store">
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="app-preview">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-u50WNiTTcVSPN3RqqLOco0RLS1pC85.png" alt="TrampConosco App" class="app-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
