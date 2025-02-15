@@ -57,8 +57,14 @@ pt-BR:
         funcao:
           one: "Funcao"
           other: "Funcões"
+        prestante:
+          one: "Prestante"
+          other: "Prestantes"
       attributes:
         funcoes:
+          nome: "Nome"
+          descricao: "Descrição"
+        prestantes:
           nome: "Nome"
           descricao: "Descrição"
   date:

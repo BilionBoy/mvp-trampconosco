@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_02_15_185952) do
+ActiveRecord::Schema[7.2].define(version: 2025_02_15_193125) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categorias", force: :cascade do |t|
+    t.string "nome"
+    t.string "descricao"
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "funcoes", force: :cascade do |t|
     t.string "titulo"
@@ -22,6 +32,17 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_15_185952) do
     t.datetime "deleted_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "prestantes", force: :cascade do |t|
+    t.string "nome"
+    t.bigint "categoria_id", null: false
+    t.string "created_by"
+    t.string "updated_by"
+    t.datetime "deleted_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["categoria_id"], name: "index_prestantes_on_categoria_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -38,5 +59,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_02_15_185952) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "prestantes", "categorias"
   add_foreign_key "users", "funcoes"
 end
