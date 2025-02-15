@@ -11,6 +11,8 @@
         <div class="row mb-3">
           <div class="col-md-6">
             <%= f.input :email, placeholder: "Email", input_html: { class: "form-control" } %>
+          </div>
+          <div class="col-md-6">
             <%= f.input :funcao_id, as: :select, collection: Funcao.all.collect { |f| [f.titulo, f.id] }, prompt: "Selecione uma função", input_html: { class: "form-control" } %>
           </div>
         </div>
