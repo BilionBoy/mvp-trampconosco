@@ -26074,3 +26074,251 @@ Processing by PrestantesController#index as HTML
 Completed 200 OK in 13ms (Views: 7.9ms | ActiveRecord: 0.8ms (4 queries, 0 cached) | GC: 1.0ms)
 
 
+Started GET "/" for ::1 at 2025-02-15 15:43:29 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 44.2ms | GC: 16.7ms)
+Completed 200 OK in 75ms (Views: 46.0ms | ActiveRecord: 11.3ms (1 query, 0 cached) | GC: 16.7ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 15:43:31 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.2ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:43:33 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:43:37 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/prestantes" for ::1 at 2025-02-15 15:43:38 -0400
+Processing by PrestantesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrestante Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "prestantes"[0m
+  ↳ app/controllers/prestantes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering prestantes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mPrestante Load (0.1ms)[0m  [1m[34mSELECT "prestantes".* FROM "prestantes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/prestantes/index.html.erb:23
+  [1m[36mCategoria Load (0.1ms)[0m  [1m[34mSELECT "categorias".* FROM "categorias" WHERE "categorias"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prestantes/index.html.erb:41
+  Rendered prestantes/index.html.erb within layouts/application (Duration: 16.5ms | GC: 0.9ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | GC: 1.1ms)
+Completed 200 OK in 27ms (Views: 16.6ms | ActiveRecord: 4.0ms (4 queries, 0 cached) | GC: 1.6ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 15:44:27 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 3.0ms | GC: 1.8ms)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 5.2ms)
+
+
+Started GET "/prestantes" for ::1 at 2025-02-15 15:44:37 -0400
+Processing by PrestantesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrestante Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "prestantes"[0m
+  ↳ app/controllers/prestantes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering prestantes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 1.0ms | GC: 0.9ms)
+  [1m[36mPrestante Load (0.1ms)[0m  [1m[34mSELECT "prestantes".* FROM "prestantes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/prestantes/index.html.erb:23
+  [1m[36mCategoria Load (0.2ms)[0m  [1m[34mSELECT "categorias".* FROM "categorias" WHERE "categorias"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prestantes/index.html.erb:41
+  Rendered prestantes/index.html.erb within layouts/application (Duration: 7.9ms | GC: 4.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | GC: 4.4ms)
+Completed 200 OK in 24ms (Views: 10.1ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 14.6ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 15:46:08 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 1.9ms | GC: 0.4ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 15:46:42 -0400
+Processing by LandingController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 1.2ms | GC: 0.0ms)
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:47:13 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | GC: 0.3ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | GC: 0.3ms)
+Completed 200 OK in 8ms (Views: 4.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:47:24 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:47:25 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for ::1 at 2025-02-15 15:47:25 -0400
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 6.9ms | GC: 6.6ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | GC: 6.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 6.6ms)
+
+
+Started GET "/funcoes" for ::1 at 2025-02-15 15:47:26 -0400
+Processing by FuncoesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mFuncao Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "funcoes"[0m
+  ↳ app/controllers/funcoes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering funcoes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.5ms | GC: 0.4ms)
+  [1m[36mFuncao Load (0.1ms)[0m  [1m[34mSELECT "funcoes".* FROM "funcoes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/funcoes/index.html.erb:23
+  Rendered funcoes/index.html.erb within layouts/application (Duration: 5.9ms | GC: 0.6ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | GC: 0.6ms)
+Completed 200 OK in 14ms (Views: 7.5ms | ActiveRecord: 2.3ms (3 queries, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/funcoes/new" for ::1 at 2025-02-15 15:47:30 -0400
+Processing by FuncoesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering funcoes/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.6ms | GC: 0.0ms)
+  Rendered funcoes/_form.html.erb (Duration: 9.7ms | GC: 0.5ms)
+  Rendered funcoes/new.html.erb within layouts/application (Duration: 10.2ms | GC: 0.5ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | GC: 0.5ms)
+Completed 200 OK in 16ms (Views: 12.7ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.5ms)
+
+
+Started GET "/prestantes" for ::1 at 2025-02-15 15:47:38 -0400
+Processing by PrestantesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrestante Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "prestantes"[0m
+  ↳ app/controllers/prestantes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering prestantes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mPrestante Load (0.1ms)[0m  [1m[34mSELECT "prestantes".* FROM "prestantes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/prestantes/index.html.erb:23
+  [1m[36mCategoria Load (0.1ms)[0m  [1m[34mSELECT "categorias".* FROM "categorias" WHERE "categorias"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prestantes/index.html.erb:41
+  Rendered prestantes/index.html.erb within layouts/application (Duration: 3.0ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.5ms (4 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/prestantes" for ::1 at 2025-02-15 15:47:44 -0400
+Processing by PrestantesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mPrestante Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "prestantes"[0m
+  ↳ app/controllers/prestantes_controller.rb:9:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering prestantes/index.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  [1m[36mPrestante Load (0.1ms)[0m  [1m[34mSELECT "prestantes".* FROM "prestantes" LIMIT $1 OFFSET $2[0m  [["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/prestantes/index.html.erb:23
+  [1m[36mCategoria Load (0.1ms)[0m  [1m[34mSELECT "categorias".* FROM "categorias" WHERE "categorias"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/prestantes/index.html.erb:41
+  Rendered prestantes/index.html.erb within layouts/application (Duration: 3.8ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 6.4ms | GC: 5.7ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | GC: 5.7ms)
+Completed 200 OK in 18ms (Views: 13.5ms | ActiveRecord: 0.7ms (4 queries, 0 cached) | GC: 5.7ms)
+
+
+Started GET "/prestantes/new" for ::1 at 2025-02-15 15:47:57 -0400
+Processing by PrestantesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering prestantes/new.html.erb within layouts/application
+  Rendered shared/_context_nav.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mCategoria Load (0.2ms)[0m  [1m[34mSELECT "categorias".* FROM "categorias"[0m
+  ↳ app/views/prestantes/_form.html.erb:20
+  Rendered prestantes/_form.html.erb (Duration: 8.1ms | GC: 0.3ms)
+  Rendered prestantes/new.html.erb within layouts/application (Duration: 8.6ms | GC: 0.4ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | GC: 0.5ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | GC: 0.9ms)
+Completed 200 OK in 15ms (Views: 11.5ms | ActiveRecord: 0.3ms (2 queries, 0 cached) | GC: 0.9ms)
+
+
