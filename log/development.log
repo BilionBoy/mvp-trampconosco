@@ -18437,3 +18437,176 @@ ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
   
 ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
   
+Started GET "/" for 127.0.0.1 at 2025-02-15 11:56:40 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 6.2ms | GC: 4.7ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 1.7ms | GC: 1.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 91.1ms | GC: 38.3ms)
+Completed 200 OK in 111ms (Views: 94.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 39.2ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-15 11:56:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 11:56:42 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 3.5ms | GC: 1.2ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 1.2ms)
+
+
+Started GET "/placeholder.svg?height=600&width=400" for 127.0.0.1 at 2025-02-15 11:56:42 -0400
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 11:56:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2025-02-15 12:01:15 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | GC: 0.4ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 12:01:21 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.2ms | GC: 0.2ms)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/placeholder.svg?height=600&width=400" for 127.0.0.1 at 2025-02-15 12:01:21 -0400
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:01:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2025-02-15 12:01:37 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | GC: 0.6ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.6ms)
+
+
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 12:01:42 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/placeholder.svg?height=600&width=400" for 127.0.0.1 at 2025-02-15 12:01:42 -0400
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:01:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 12:01:48 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/placeholder.svg?height=600&width=400" for 127.0.0.1 at 2025-02-15 12:01:48 -0400
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:01:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:01:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 12:02:38 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.3ms | GC: 0.3ms)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/placeholder.svg?height=600&width=400" for 127.0.0.1 at 2025-02-15 12:02:38 -0400
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:02:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:02:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/landing/index" for 127.0.0.1 at 2025-02-15 12:02:52 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.5ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 2.8ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/placeholder.svg?height=60&width=200" for 127.0.0.1 at 2025-02-15 12:02:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/" for ::1 at 2025-02-15 12:07:47 -0400
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered shared/sidebar/_sidebar.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | GC: 0.0ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/landing/index" for ::1 at 2025-02-15 12:07:50 -0400
+Processing by LandingController#index as HTML
+  Rendering layout layouts/home_application.erb
+  Rendering landing/index.html.erb within layouts/home_application
+  Rendered landing/index.html.erb within layouts/home_application (Duration: 0.1ms | GC: 0.0ms)
+  Rendered layout layouts/home_application.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/placeholder.svg?height=60&width=200" for ::1 at 2025-02-15 12:07:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
+Started GET "/placeholder.svg?height=60&width=200" for ::1 at 2025-02-15 12:07:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/placeholder.svg"):
+  
