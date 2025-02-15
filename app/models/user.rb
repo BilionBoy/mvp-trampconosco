@@ -5,5 +5,10 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  # Adicione aqui quaisquer métodos ou validações padrão para seus modelos
+
+  # Associação com Funcao
+  belongs_to :funcao
+
+  # Validação do campo 'funcao_id'
+  validates :funcao_id, presence: true
 end
